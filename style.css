@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    padding: 2% 10%;
+    font-family: 'Rubik', sans-serif;
+    -webkit-animation: color-change 2s linear infinite alternate both;
+    animation: color-change 2s linear infinite alternate both;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 60px;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar li {
+    margin: 0 5%;
+    cursor: pointer;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    position: relative;
+}
+
+.mobile-heading {
+    font-weight: 800;
+}
+
+.navbar li a::before {
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-bottom: 3px solid rgb(174, 25, 232);
+    transition: all 0.4s linear;
+}
+
+.navbar li a:hover::before {
+    width: 100%;
+}
+
+.cp {
+    cursor: pointer;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 78vh;
+    width: 100%;
+}
+
+.left-side {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.left-side h1 {
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+
+.left-side p {
+    margin-top: 3%;
+    font-size: 0.8rem;
+    color: rgb(38, 37, 37);
+    width: 70%;
+}
+
+
+.right-side {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side img {
+    width: 85%;
+}
+
+.buy-now-btn {
+    padding: 1% 2%;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(183deg, rgb(255, 255, 255), rgb(40, 175, 216));
+    border: 2px solid rgb(40, 175, 216);
+    transition: 1s all;
+    margin-top: 2%;
+}
+
+.buy-now-btn:hover {
+    background: white;
+    border: 2px solid blue;
+}
+
+.learn-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.learn-more p {
+    margin-left: 2px;
+}
+
+
+@-webkit-keyframes color-change {
+    0% {
+        background: #73ed3b;
+    }
+
+    100% {
+        background: #ff7b00c3;
+    }
+}
+
+@keyframes color-change {
+    0% {
+        background: #73ed3b;
+    }
+
+    100% {
+        background: #ff7b00c3;
+    }
+}
